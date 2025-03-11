@@ -126,7 +126,13 @@
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Name can not be empty</value>
   </data>
+  <data name="PASSWORD_EMPTY" xml:space="preserve">
+    <value>Password can not be empty</value>
+  </data>
   <data name="PASSWORD_LIMIT_CHAR" xml:space="preserve">
     <value>Password must contain up to 6 characters</value>
+  </data>
+  <data name="UNKNOWN_ERROR" xml:space="preserve">
+    <value>Unkwon error</value>
   </data>
 </root>
