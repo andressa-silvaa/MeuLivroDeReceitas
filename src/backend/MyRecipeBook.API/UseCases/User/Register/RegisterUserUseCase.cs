@@ -18,7 +18,7 @@ public class RegisterUserUseCase
     {
         var validator = new RegisterUserValidator();
         var result = validator.Validate(request);
-        if (!result.IsValid) 
+        if (!result.IsValid)
         {
             var errorMessage = result.Errors.Select(error => error.ErrorMessage);
             throw new Exception();
