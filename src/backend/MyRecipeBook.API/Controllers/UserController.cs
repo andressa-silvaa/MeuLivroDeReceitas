@@ -14,6 +14,6 @@ public class UserController : ControllerBase
     {
         var userCase = new RegisterUserUseCase();
         var result = userCase.Execute(request);
-        return Created(string.Empty,result);
+        return Created(string.Empty, result);
     }
 }
