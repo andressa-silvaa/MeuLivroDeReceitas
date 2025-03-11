@@ -126,7 +126,13 @@
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Nome não pode ser vazio</value>
   </data>
+  <data name="PASSWORD_EMPTY" xml:space="preserve">
+    <value>Senha não pode ser vazia</value>
+  </data>
   <data name="PASSWORD_LIMIT_CHAR" xml:space="preserve">
     <value>Senha deve conter até 6 caracteres</value>
+  </data>
+  <data name="UNKNOWN_ERROR" xml:space="preserve">
+    <value>Erro desconhecido</value>
   </data>
 </root>
