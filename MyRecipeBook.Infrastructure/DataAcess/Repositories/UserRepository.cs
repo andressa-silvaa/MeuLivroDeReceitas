@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyRecipeBook.Domain.Entities;
+using MyRecipeBook.Domain.Repositories.User;
 
 namespace MyRecipeBook.Infrastructure.DataAcess.Repositories;
-public class UserRepository
+public class UserRepository : IUserReadOnlyRepository,IUserWriteOnlyRepository
 {
     private readonly MyRecipeBookDbContext _context;
 
