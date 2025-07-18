@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MyRecipeBook.Domain.Repositories;
 using MyRecipeBook.Domain.Repositories.User;
 using MyRecipeBook.Infrastructure.DataAcess;
 using MyRecipeBook.Infrastructure.DataAcess.Repositories;
@@ -21,6 +22,7 @@ public static class DependencyInjectionExtension
     }
     private static void AddRepositories(IServiceCollection services)
     {
+        services.AddScoped<IUnitOfWork,UnitOfWork>();
         services.AddScoped<IUserReadOnlyRepository, UserRepository>();
         services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
     }
