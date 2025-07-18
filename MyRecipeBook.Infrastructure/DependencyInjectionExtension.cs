@@ -10,11 +10,12 @@ public static class DependencyInjectionExtension
 {
     public static void AddInfrastructure(this IServiceCollection services)
     {
+        AddDbContext(services);
         AddRepositories(services);
     }
     private static void AddDbContext(IServiceCollection services)
     {
-        var connectionString = "Data Source=DESKTOP-PRCKVPI;Initial Catalog=meulivrodereceitas;Integrated Security=True;";
+        var connectionString = "Data Source=DESKTOP-PRCKVPI;Initial Catalog=meulivrodereceitas;User ID=andressa_sql_user;Password=@AndressaSilva123;Trusted_Connection=True; Encrypt=True; TrustServerCertificate=True;";
         services.AddDbContext<MyRecipeBookDbContext>(dbContextOptions =>
         {
             dbContextOptions.UseSqlServer(connectionString);
