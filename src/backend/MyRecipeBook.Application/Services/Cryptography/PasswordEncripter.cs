@@ -4,9 +4,13 @@ using System.Text;
 namespace MyRecipeBook.Application.Services.Cryptography;
 public class PasswordEncripter
 {
+    private readonly string _additionalKey;
+    public PasswordEncripter(string additionalKey) => _additionalKey = additionalKey;
     public string Encrypter(string password)
     {
-        var bytes = Encoding.UTF8.GetBytes(password);
+        var newPassword = $"{password}{_additionalKey}";
+
+        var bytes = Encoding.UTF8.GetBytes(newPassword);
         var hashBytes = SHA3_512.HashData(bytes);
         return StringBytes(hashBytes);
     }
