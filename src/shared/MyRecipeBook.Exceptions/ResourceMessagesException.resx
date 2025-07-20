@@ -135,4 +135,7 @@
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Unkwon error</value>
   </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>E-mail already registered</value>
+  </data>
 </root>
