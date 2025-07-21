@@ -106,7 +106,7 @@ namespace MyRecipeBook.Exceptions {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password must contain up to 6 characters.
+        ///   Looks up a localized string similar to Password must contain up to 8 characters.
         /// </summary>
         public static string PASSWORD_LIMIT_CHAR {
             get {
