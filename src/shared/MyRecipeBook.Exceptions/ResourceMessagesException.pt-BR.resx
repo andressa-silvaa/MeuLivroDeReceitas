@@ -130,7 +130,7 @@
     <value>Senha não pode ser vazia</value>
   </data>
   <data name="PASSWORD_LIMIT_CHAR" xml:space="preserve">
-    <value>Senha deve conter até 6 caracteres</value>
+    <value>Senha deve conter até 8 caracteres</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido</value>
