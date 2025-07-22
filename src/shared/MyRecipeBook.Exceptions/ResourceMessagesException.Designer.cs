@@ -81,9 +81,9 @@ namespace MyRecipeBook.Exceptions {
         /// <summary>
         ///   Looks up a localized string similar to E-mail must be valid.
         /// </summary>
-        public static string EMAIL_VALID {
+        public static string EMAIL_INVALID {
             get {
-                return ResourceManager.GetString("EMAIL_VALID", resourceCulture);
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
             }
         }
         
